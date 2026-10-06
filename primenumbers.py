@@ -1,9 +1,7 @@
 n = int(input("Enter a number:"))
-print("Prime numbers are:")
-for num in range(2,n+1):
-    count = 0
-    for j in range(1,num+1):
-        if num % j == 0:
-            count += 1
-    if count == 2:
-        print(j , end =" ")
+prime = n
+
+if n % 1 == 0 and n % n == 0:
+    print(f"{prime} is a prime number")
+else:
+    print(f"{prime} is not a prime number")
